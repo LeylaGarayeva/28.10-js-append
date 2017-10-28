@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div  id="main">
+	
+</div>
+
+<script type="text/javascript">
+	var header = document.createElement("div");
+	var content=document.createElement("div");
+	var footer=document.createElement("div");
+	var main=document.getElementById("main");
+	main.appendChild(header);
+	main.appendChild(content);
+	main.appendChild(footer);
+	header.style.background="blue";
+	header.style.height="100px";
+	content.style.background="red";
+	content.style.height="300px";
+	footer.style.background="green";
+	footer.style.height="100px";
+
+	var logo = document.createElement("div");
+	header.appendChild(logo);
+	logo.style.background="yellow";
+	logo.style.padding="8px 13px";
+	logo.style.width="100px";
+	logo.classList.add("logoclass");
+	logo.innerText="LOGO name";
+	logo.style.float ="left";
+	logo.style.color="red";
+	header.style.padding ="30px";
+	 
+	var contact =document.createElement("div");
+	header.appendChild(contact);
+	contact.style.float="right";
+	contact.innerText="Contact form";
+	contact.style.background="red";
+	contact.style.color="white";
+	contact.style.padding ="8px 15px";
+
+
+	var about =document.createElement("div");
+	footer.appendChild(about);
+	about.innerText="about";
+	about.style.width="30%";
+	about.style.float="left";
+	about.style.background="grey";
+	about.style.padding="15px";
+	footer.style.padding="30px";
+	about.style.marginLeft="10px";
+
+
+	var link = document.createElement("div");
+	footer.appendChild(link);
+
+	link.style.width="30%";
+	link.style.background="yellow";
+	link.style.padding="15px";
+	link.style.float="left";
+	link.innerText="links";
+	link.style.marginLeft="10px";
+	footer.style.textAlign="center";
+
+
+	var form = document.createElement("div");
+	footer.appendChild(form);
+
+	form.style.width="30%";
+	form.style.background="red";
+	form.style.padding="15px";
+	form.style.float="left";
+	form.innerText="form";
+	form.style.marginLeft="10px";
+
+
+	var contentleft=document.createElement("div");
+	content.appendChild(contentleft);
+	contentleft.style.background="#b567a5";
+	contentleft.style.height="100%";
+	contentleft.style.width="40%";
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>  
+    <head></head>
+    <body>
+        <div class="main" style="width: 280px;">
+        </div>    
+    </body>
+    <script>
+        var array=document.createDocumentFragment();
+        for ( var i=1;i<=16;i++){
+            var blok = document.createElement("div");
+            blok.classList.add("botton");
+            blok.style.height="20px";
+            blok.style.width="60px";
+            blok.style.background="grey";
+            blok.style.float="left";
+            blok.style.margin="2px";
+            blok.style.fontWeight="bold";
+            blok.style.textAlign="center";
+        //    blok.innerHTML=i;
+            array.appendChild(blok);
+        }
+        var main = document.getElementsByClassName("main");
+        main[0].appendChild(array);
+        var bottons = document.getElementsByClassName("botton");
+       bottons[0].innerText="7";
+       bottons[1].innerText="8";
+       bottons[2].innerText="9";
+       bottons[4].innerText="4";
+       bottons[3].innerText="/";
+       bottons[5].innerText="5";
+       bottons[6].innerText="6";
+       bottons[8].innerText="1";
+       bottons[9].innerText="2";
+       bottons[10].innerText="3";
+       bottons[12].innerText="0";
+       bottons[7].innerText="x";
+       bottons[11].innerText="-";
+       bottons[15].innerText="=";
+       bottons[15].style.background="orange";
+       bottons[14].innerText="+";
+       bottons[13].innerText=".";
+    </script>
+</html>
